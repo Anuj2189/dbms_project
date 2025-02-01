@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Inventory Management System</h1>
+        </header>
+        <div class="button-container">
+            <a href="{{ url_for('products') }}" class="button">Manage Products</a>
+            <a href="{{ url_for('customers') }}" class="button">Manage Customers</a>
+            <a href="{{ url_for('orders') }}" class="button">Manage Orders</a>
+        </div>
+    </div>
+</body>
+</html>
